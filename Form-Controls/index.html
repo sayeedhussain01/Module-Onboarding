@@ -7,83 +7,103 @@
   <title>My form exercise</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- this is a google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+
+  <!-- This is a css link -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="font">
 
-  <!-- This is a header section -->
-  <header class="hd">
-    <h1>Product Pick</h1>
-  </header>
+  <div class="form">
 
-
-
-  <main>
-    <form>
-
-      <!-- This is a customer name input -->
-
-      <div>
-        <label class="blk" for="nam">First Name* </label>
-        <input type="text" id="nam" name="name" placeholder="Enter Your Name" pattern=".*\S.*\S.*" required>
-      </div>
-
-      <br>
-
-      <div>
-        <label class="blk" for="nams">Last Name* </label>
-        <input type="text" id="nams" name="name" placeholder="Enter Your Name" pattern=".*\S.*\S.*" required>
-      </div>
-
-      <br>
+    <!-- This is a header section -->
+    <header class="hd">
+      <h1>Product Pick</h1>
+    </header>
 
 
-      <!-- This is a customer email input -->
-      <div>
-        <label class="blk" for="mail">Email* </label>
-        <input type="email" id="mail" placeholder="Enter Your Email" name="Email" required>
-      </div>
 
-      <br>
+    <main>
+      <form>
 
-      <!-- This is a color section -->
-       
-      <div class="AllClr">
-        <label class="blk" for="clr"> T-shirt Color*</label>
-        <select name="Color" id="clr" required>
-          <option value="">-- Select a color -- </option>
-          <option value="red">Red</option>
-          <option value="blue"> Blue</option>
-          <option value="yellow">Yellow</option>
-        </select>
-      </div>
+        <fieldset>
+          <div class="all">
 
-      <br>
+            <!-- This is a customer name input -->
+
+            <div>
+              <label class="blk" for="nam">First Name* </label>
+              <input type="text" id="nam" name="name" placeholder="Enter Your Name" pattern=".*\S.*\S.*" required>
+            </div>
+
+            <br>
+
+            <div>
+              <label class="blk" for="nams">Last Name* </label>
+              <input type="text" id="nams" name="name" placeholder="Enter Your Name" pattern=".*\S.*\S.*" required>
+            </div>
+
+            <br>
 
 
-        <!-- This is a size option -->
+            <!-- This is a customer email input -->
+            <div>
+              <label class="blk" for="mail">Email* </label>
+              <input type="email" id="mail" placeholder="Enter Your Email" name="Email" required>
+            </div>
 
-      <div>
-        <label class="blk" for="sz"> T-shirt Size*</label>
-        <select name="Size" id="sz" required>
-          <option value="">-- Select a color -- </option>
-          <option value="xs">XS</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-          <option value="xxl">XXL</option>
-        </select>
+            <br>
 
-        <button class="btn" type="submit"> Submit </button>
-      </div>
+            <!-- This is a color section -->
 
-    </form>
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <p>By HOMEWORK SOLUTION</p>
-  </footer>
+            <div class="AllClr">
+              <label class="blk" for="clr"> T-shirt Color*</label>
+              <select name="Color" id="clr" required>
+                <option value="">-- Select a color -- </option>
+                <option value="red">Red</option>
+                <option value="blue"> Blue</option>
+                <option value="yellow">Yellow</option>
+              </select>
+            </div>
+
+            <br>
+
+
+            <!-- This is a size option -->
+
+            <div>
+              <label class="blk" for="sz"> T-shirt Size*</label>
+              <select name="Size" id="sz" required>
+                <option value="">-- Select a color -- </option>
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+              </select>
+
+              <button class="btn" type="submit"> Submit </button>
+            </div>
+
+          </div>
+        </fieldset>
+
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <p>By Sayeed Hussain </p>
+    </footer>
+  </div>
 </body>
 
 </html>
